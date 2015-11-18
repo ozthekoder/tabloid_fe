@@ -1,13 +1,15 @@
 var React = require('react');
-var Router = require('react-router');
-var Route = Router.Route;
-var RouteHandler = Router.RouteHandler;
-var Home = require('./modules/Home');
+const Router = require('react-router');
+const Route = Router.Route;
+const RouteHandler = Router.RouteHandler;
+const Home = require('./modules/Home');
+const Header = require("./components/Header");
 
 var App = React.createClass({
   render: function(){
     return (
       <div className="container" id="app">
+        <Header/>
         <RouteHandler/>
       </div>
     );

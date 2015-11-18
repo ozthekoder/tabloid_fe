@@ -3,3 +3,35 @@ html, body, .container {
   height: 100%;
   overflow: hidden;
 }
+
+.header {
+  height: 50px;
+  padding: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 9999;
+  background: $color-primary;
+
+  ul {
+    float: right;
+    li {
+      float: right;
+      .button {
+        background: $color-secondary;
+        margin: 0 5px 0 0;
+      }
+    }
+  }
+
+
+}
+
+.page {
+  height: calc(100% - 50px);
+  position: relative;
+  top: 50px;
+  width: 100%;
+}
